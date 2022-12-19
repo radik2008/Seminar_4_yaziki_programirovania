@@ -28,3 +28,7 @@ if(den == 7)
 {
    Console.WriteLine($"{7}  это воскресенье");
 }
+else
+{
+ Console.WriteLine("Ведене неправильное число");
+}

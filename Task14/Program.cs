@@ -9,5 +9,6 @@ while (count < Array.Length)
 {
     if (Array[count] == faind) Write($"{count} номер элемента");
     count++;
+    break;
 }
 

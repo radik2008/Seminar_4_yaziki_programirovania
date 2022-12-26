@@ -10,5 +10,7 @@ if(a1>a2)
 }
 else
 {
-   WriteLine(a1); 
+   WriteLine(a2); 
 }
+//int max=a1>a2?a1:a2;    можно записать так  WraitLine(a1>a2?a1:a2);
+WriteLine(number%2==0?"Even":"odd");

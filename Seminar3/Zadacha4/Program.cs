@@ -11,4 +11,5 @@ Write("ВВедите координаты y2 :");
 int y2 = int.Parse(ReadLine());
 double i = Math.Sqrt(Math.Pow((x2 - x1),2) + Math.Pow((y2 - y1),2));
 
-Write($"{i:f2}");   // округление  f2 до десятых, p проценты
+WriteLine($"{i:f2}");   // округление  f2 до десятых, p проценты
+Write(i+"dddd");     //добавить текст

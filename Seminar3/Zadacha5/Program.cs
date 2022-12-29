@@ -3,9 +3,9 @@ using static System.Console;
 Clear();
 Write("ВВедите число :");
 int n = int.Parse(ReadLine());
-int count= 0;
-while(count<=n)
+
+while(n>0)     //такая запись избавляет от доп переменной
 {
-    WriteLine(count*count);
-    count+=1;
+    WriteLine($"число {n} в квадрате будет {Math.Pow(n,2)}");
+    n--;        //такая запись избавляет от доп переменной
 }

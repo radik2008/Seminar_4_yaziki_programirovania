@@ -2,7 +2,10 @@
 using static System.Console;
 Clear();
 Write("ВВедите  ЧИСЛО :");
-int n = int.Parse(ReadLine());
+if (!int.TryParse(ReadLine(), out int n)) 
+{
+    Write("Введено не число :");
+}
 int count = 1;
 
 while (count <= n)

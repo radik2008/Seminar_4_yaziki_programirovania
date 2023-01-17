@@ -15,9 +15,7 @@ void FillArray(int[] collection)
 {
     for (int i = 0; i < collection.Length; i++)
     {
-         collection[i] = new Random().Next(a);
-        //i = i + 1;
-        i++;
+         collection[i] = new Random().Next(b,a);
     }
         
 }

@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿// Новый способ вывода массива через СТРИНГ,ДЖОИН разворот массива двумя способами
 using static System.Console;
 Clear();
 Write("Введите размер массива: ");

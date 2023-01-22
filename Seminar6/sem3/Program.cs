@@ -19,3 +19,10 @@ string decitToBinary(int iNnum)
     return result;
 
 }
+
+
+string x = "л1л1л1л";
+string x1 = "2л2о2о2о";
+string x2 = "д3о3о3о3";
+string y = x +x1+x2+num.ToString();           /// складываем строки эксперимент
+WriteLine(y);

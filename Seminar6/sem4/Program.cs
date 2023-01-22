@@ -23,4 +23,13 @@ int[] GetArra(int size)
     return Array;
 }
 
-int[] CopyAr(int[] Ar)//                    копия массива на осонове создания нового
+int[] CopyAr(int[] Ar)                           //                    копия массива на осонове создания нового
+{
+    int[] arr = new int [Ar.Length];
+    for (int i = 0; i < Ar.Length; i++)
+    {
+        arr[i]=Ar[i];
+    }
+    return arr;
+}
+        

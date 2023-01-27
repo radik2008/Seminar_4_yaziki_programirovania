@@ -9,7 +9,7 @@ Write("Введите размер матрицы и диапазон значе
 // int[,] array = GetMatrixArray(int.Parse(parameters[0]), int.Parse(parameters[1]), int.Parse(parameters[2]), int.Parse(parameters[3]));
 
 int[] intParams=Array.ConvertAll(ReadLine()!.Split(" ",StringSplitOptions.RemoveEmptyEntries),int.Parse); // сразу перевели строчку в масив из чисел
-// вместо " " можно написать new char[]{' ', ':', '#'  }  или new string []{" ", "-", ";", ","}или и перечислить все разделители
+// вместо " " можно написать new char[]{' ', ':', '#', 'a', '/"'}  или new string []{" ", "-", ";", ",", "ab"}или и перечислить все разделители
 
 int[,] array = GetMatrixArray((intParams[0]), (intParams[1]), (intParams[2]), (intParams[3]));    //
 

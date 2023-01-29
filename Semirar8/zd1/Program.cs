@@ -39,7 +39,7 @@ WriteLine();
 CheangeLineColumn(ar2);
 
 
-int[,] CheangeArray(int[,] arr)
+int[,] CheangeArray(int[,] arr)                  // первая задача замена первой и последней строки
 {
     int[,] arr2 = arr.Clone() as int[,];
     for (int i = 0; i < arr.GetLength(1); i++)
@@ -50,7 +50,7 @@ int[,] CheangeArray(int[,] arr)
     return arr2;
 }
 
-void CheangeLineColumn(int[,] arr)
+void CheangeLineColumn(int[,] arr)               //вторая задача по замене строк и столбцов
 {
     if (arr.GetLength(0) != arr.GetLength(1))
     {

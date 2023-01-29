@@ -13,6 +13,10 @@ int param2 = parametrs[1];
 WriteLine(param1);
 WriteLine(param2);
 
+string p1=parametrs[0].ToString();
+WriteLine($"text = {p1}");
+
+
 if((param1+param2)%2==0)
     {
         Write("Клетка черная");

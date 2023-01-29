@@ -18,6 +18,8 @@ int[,] array = GetMatrixArray((intParams[0]), (intParams[1]), (intParams[2]), (i
 PrintMatrixArray(array);
 WriteLine();
 WriteLine($"Сумма элементов по диагонали равно {SumDiagonal(array)}");
+WriteLine();
+WriteLine($"Сумма элементов по диагонали равно {SumDiagonal2(array)}");
 
 
 int SumDiagonal(int[,] arra)
@@ -35,6 +37,19 @@ int SumDiagonal(int[,] arra)
     }
     return res;
 }
+
+int SumDiagonal2(int[,] arra)             //// в один цикл
+{
+    int res = 0;
+    for (int i = 0; i < arra.GetLength(0) && i < arra.GetLength(1); i++)
+    {
+        res += arra[i, i];
+    }
+    return res;
+}
+
+
+
 
 int[,] GetMatrixArray(int rows, int columns, int minValue, int maxValue)
 {

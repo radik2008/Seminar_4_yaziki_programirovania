@@ -37,7 +37,6 @@ WriteLine();
 
 
 
-
 void Distionary(int[,] arra)
 {
     for (int r = 0; r < 10; r++)
@@ -55,7 +54,6 @@ void Distionary(int[,] arra)
         WriteLine($"Число {r} встречаетс {n} раз!");
     }
 }
-
 
 int[,] GetMatrixArray(int rows, int columns, int minValue, int maxValue)
 {

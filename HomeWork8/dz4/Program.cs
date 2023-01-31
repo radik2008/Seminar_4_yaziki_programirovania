@@ -25,19 +25,19 @@ WriteLine();
 
 
 
-int[] cubeValues = new int[intParams[0] * intParams[1] * intParams[2]];
-int tmp = 0;
-bool isUnique = false;
-for (int i = 0; i < cubeValues.Length; i++)
-{
-    tmp = rand.Next(intParams[3], intParams[4]);
-    isUnique = true;
-    for (int j = 0; j < cubeValues.Length; j++)
-    {
-        if (cubeValues[j] == tmp) { i--; isUnique = false; break; }
-    }
-    if (isUnique) { cubeValues[i] = tmp; }
-}
+// int[] cubeValues = new int[intParams[0] * intParams[1] * intParams[2]];
+// int tmp = 0;
+// bool isUnique = false;
+// for (int i = 0; i < cubeValues.Length; i++)
+// {
+//     tmp = rand.Next(intParams[3], intParams[4]);
+//     isUnique = true;
+//     for (int j = 0; j < cubeValues.Length; j++)
+//     {
+//         if (cubeValues[j] == tmp) { i--; isUnique = false; break; }
+//     }
+//     if (isUnique) { cubeValues[i] = tmp; }
+// }
 
 
 

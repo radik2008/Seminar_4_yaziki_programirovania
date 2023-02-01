@@ -26,9 +26,9 @@ WriteLine(NumbRec(1, 10));
 WriteLine(NumbFor2(10, 1));
 WriteLine(NumbRec2(1, 10));
 
-PrintNumbers(30, 20);
+PrintNumbers(20, 30);
 WriteLine();
-PrintNumbers(30, 40);
+PrintNumbers(20, 10);
 
 string NumbFor2(int a, int b)   /// через цикл а>b
 {
@@ -50,21 +50,26 @@ string NumbRec2(int a, int b)          /// чере рекурсию а>b
 
 void PrintNumbers(int a, int b)                  /// чере воид метод
 {
-    if (a <= b)  
+    if (a < b)
 
         if (a == b) Write($" {b}");
         else
         {
-            PrintNumbers(a, b - 1);
-            Write($", {b}");
+            // PrintNumbers(a, b - 1);    /// хоть а прибавляй хоть, б вычитай, ваше пох
+            // Write($", {b}");
+            Write($"{a}, ");
+            PrintNumbers(a + 1, b);
+
         }
     else
     {
         if (a == b) Write($" {b}");
         else
         {
-            Write($" {a},");
-            PrintNumbers(a-1, b);
+            // Write($" {a},");
+            // PrintNumbers(a-1, b);
+            PrintNumbers(a, b + 1);    /// хоть а прибавляй хоть, б вычитай, ваше пох
+            Write($", {b}");
         }
     }
 }

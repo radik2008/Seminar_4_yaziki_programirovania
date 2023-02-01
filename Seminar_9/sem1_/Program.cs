@@ -14,7 +14,7 @@ string NumbFor(int a, int b)   /// через цикл а<b
     return res;
 }
 
-string NumbRec(int a, int b)          /// чере рекурсию а<b
+string NumbRec(int a, int b)          /// чере рекурсию а<b         добавляем по числу справа
 {
     if (a <= b) return $"{a}  " + NumbRec(a + 1, b);
     else return String.Empty;
@@ -23,7 +23,7 @@ string NumbRec(int a, int b)          /// чере рекурсию а<b
 WriteLine(NumbFor(1, 10));
 WriteLine(NumbRec(1, 10));
 
-string NumbFor2(int a, int b)   /// через цикл а<b
+string NumbFor2(int a, int b)   /// через цикл а>b
 {
     string res = String.Empty;
     for (int i = a; i >= b; i--)
@@ -33,9 +33,9 @@ string NumbFor2(int a, int b)   /// через цикл а<b
     return res;
 }
 
-string NumbRec2(int a, int b)          /// чере рекурсию а<b
+string NumbRec2(int a, int b)          /// чере рекурсию а>b
 {
-    if (a <= b) return NumbRec2(a + 1, b) + $"{a} ";
+    if (a <= b) return NumbRec2(a + 1, b) + $"{a} "; /// из за долбаеба препода, код через жопу, добавляем по числу слева
     else return String.Empty;
 }
 

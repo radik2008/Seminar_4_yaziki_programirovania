@@ -23,6 +23,13 @@ string NumbRec(int a, int b)          /// чере рекурсию а<b        
 WriteLine(NumbFor(1, 10));
 WriteLine(NumbRec(1, 10));
 
+WriteLine(NumbFor2(10, 1));
+WriteLine(NumbRec2(1, 10));
+
+PrintNumbers(30, 20);
+WriteLine();
+PrintNumbers(30, 40);
+
 string NumbFor2(int a, int b)   /// через цикл а>b
 {
     string res = String.Empty;
@@ -39,8 +46,29 @@ string NumbRec2(int a, int b)          /// чере рекурсию а>b
     else return String.Empty;
 }
 
-WriteLine(NumbFor2(10, 1));
-WriteLine(NumbRec2(1, 10));
+
+
+void PrintNumbers(int a, int b)                  /// чере воид метод
+{
+    if (a <= b)  
+
+        if (a == b) Write($" {b}");
+        else
+        {
+            PrintNumbers(a, b - 1);
+            Write($", {b}");
+        }
+    else
+    {
+        if (a == b) Write($" {b}");
+        else
+        {
+            Write($" {a},");
+            PrintNumbers(a-1, b);
+        }
+    }
+}
+
 
 
 

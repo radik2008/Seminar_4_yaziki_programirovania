@@ -5,6 +5,8 @@ using static System.Console;
 Clear();
 
 string result= GetNumbers1(20);
+WriteLine();
+
 WriteLine(result);
 
 WriteLine(GetNumbers1(20));
